@@ -49,25 +49,12 @@ public class CalculatorTest {
 		double a = 3, b = 2;
 	assertEquals("additon " + a + " and "+ b, 5.0, calculator.add(3, 2), 0.1);
     }
-
+    @Test
     public void multiplication() throws Exception {
         double result = calculator.multiplication(2,3);
         assertEquals(6, result, 0.1);
     }
 
-    @Test
-    public void isPositive() throws Exception {
-        boolean result = calculator.isPositive(4);
-        assertTrue("Not positive", result);
-        assertFalse("Not positive", calculator.isPositive(-3));
-
-    }
-
-    @Test
-    public void isPositive2() throws Exception {
-        Assume.assumeFalse("assume Not positive", true);
-
-    }
     
     @Ignore
     @Test(timeout = 100)
