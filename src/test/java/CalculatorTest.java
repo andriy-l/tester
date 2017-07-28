@@ -28,11 +28,8 @@ public class CalculatorTest {
     public void convertFromDecimalToOctal() throws Exception {
 
         int testValue = 10;
-        int testValue2 = 11;
         String expected = Integer.toOctalString(testValue);
-        String expected2 = Integer.toOctalString(testValue2);
         assertEquals("Tested values for " + testValue, expected, calculator.convertFromDecimalToOctal(testValue));
-        assertEquals("Tested values for " + testValue, expected2, calculator.convertFromDecimalToOctal(testValue2));
 
     }
 
@@ -56,10 +53,5 @@ public class CalculatorTest {
     }
 
     
-    @Ignore
-    @Test(timeout = 100)
-    public void isNotNull() throws Exception {
-        Thread.sleep(5_000);
-    }
 
 }
